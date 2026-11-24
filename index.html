@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#FF6B6B">
+<title>Nice New Nails · Loud lacquer in six shades</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="description" content="Six glossy nail lacquers that refuse to sit still. Pick a shade and see it on the hand.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Outfit:wght@300..600&display=swap">
+<link rel="stylesheet" href="aurella.css?v=4">
+<link rel="stylesheet" href="aurella-bag.css?v=1">
+<link rel="stylesheet" href="nnn.css?v=1">
+</head>
+<body data-vista="mesa">
+
+<a class="nn-skip" href="#tonos">Skip to the shades</a>
+
+<header class="barra">
+  <a class="marca nn-logo" href="./" aria-label="Nice New Nails, home">
+    <svg class="nn-mark" viewBox="0 0 40 40" aria-hidden="true"><g transform="rotate(-14 20 20)"><path class="nn-mark-nail" d="M11 16.5C11 9.6 15 5 20 5s9 4.6 9 11.5V29a6 6 0 0 1-6 6h-6a6 6 0 0 1-6-6z"/><path class="nn-mark-shine" d="M15.5 15c0-3.4 1.5-5.8 3.6-6.4"/></g></svg>
+    <span class="nn-word">nice new nails</span>
+  </a>
+  <nav class="menu" aria-label="Main">
+    <a href="#tonos">Shades</a>
+    <a href="#cuidado">How to wear</a>
+    <a href="#bare">The proof</a>
+    <a href="#worn">Worn out</a>
+  </nav>
+  <button class="bolsa" id="bolsa" type="button" aria-label="Bag, 0 items">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l-1 11.5h-11z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/></svg>
+    <span>Bag</span>
+    <span class="cuenta" id="cuenta">0</span>
+  </button>
+</header>
+
+<main>
+  <h1 class="oculto">Nice New Nails: nail lacquer in six shades</h1>
+
+<!-- 1 · the try-on stage (the original scene, untouched) -->
+<div class="escena" id="escena">
+  <picture id="scenePoster"><source media="(max-aspect-ratio:4/5)" srcset="media/mw-solstice-1600.webp"><img src="media/w-solstice-2560.webp" alt="" fetchpriority="high" width="2560" height="1429"></picture>
+  <canvas id="lienzo" aria-hidden="true"></canvas>
+  <video id="peli" muted playsinline preload="auto" aria-hidden="true"></video>
+
+  <ol class="frascos" id="frascos" aria-label="Shades"></ol>
+
+  <button class="mano" id="mano" type="button" aria-label="Try the shade on the hand">
+    <span class="mano-pista"><i aria-hidden="true"></i>Try it on</span>
+  </button>
+
+  <section class="ficha" id="ficha" aria-live="polite">
+    <p class="ojo" id="fOjo">Nail lacquer · 6 shades</p>
+    <h2 class="nombre" id="fNombre">Solstice</h2>
+    <p class="linea" id="fLinea">Glossy, chip-resistant colour. 12 ml.</p>
+    <div class="acciones">
+      <button class="laca" id="fComprar" type="button">
+        <span class="laca-brillo" aria-hidden="true"></span>
+        <span class="laca-txt"><span>Add to bag</span><span class="laca-precio">$28</span></span>
+        <span class="laca-ok" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Added</span>
+      </button>
+      <button class="probar" id="fProbar" type="button"><span>Try it on</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+    </div>
+  </section>
+
+  <section class="cerca" id="cerca" aria-label="Try on" hidden>
+    <button class="volver" id="volver" type="button" aria-label="Back to all shades">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <div class="panel">
+      <p class="ojo">Try it on</p>
+      <h2 class="nombre" id="cNombre">Solstice</h2>
+      <div class="gotas" id="gotas" role="radiogroup" aria-label="Shade"></div>
+      <button class="laca" id="cComprar" type="button">
+        <span class="laca-brillo" aria-hidden="true"></span>
+        <span class="laca-txt"><span>Add to bag</span><span class="laca-precio">$28</span></span>
+        <span class="laca-ok" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Added</span>
+      </button>
+    </div>
+  </section>
+  <a class="baja" href="#manifesto" aria-label="Keep scrolling"><span></span></a>
+</div>
+
+<!-- 2 · manifesto -->
+<section class="nn-sec nn-manifesto" id="manifesto" aria-labelledby="maTit">
+  <div class="nn-tape" aria-hidden="true"><div class="nn-tape-row" data-dir="-1"></div></div>
+  <div class="nn-wrap">
+    <p class="nn-eye">Nice New Nails</p>
+    <h2 class="nn-big nn-fill" id="maTit">Colour that talks back. Six shades, zero beige behaviour, and a gloss you can check your reflection in.</h2>
+  </div>
+  <div class="nn-tape" aria-hidden="true"><div class="nn-tape-row" data-dir="1"></div></div>
+</section>
+
+<!-- 3 · the six -->
+<section class="nn-sec nn-six" id="tonos" aria-labelledby="tTit">
+  <header class="nn-head">
+    <p class="nn-eye">The collection</p>
+    <h2 class="nn-h nn-lines" id="tTit">Pick a <em>fight.</em><br>Pick a shade.</h2>
+    <p class="nn-lede">Same high-gloss formula, same 12 ml bottle, six very different moods. Hover a bottle to see it on the hand, then tap to try it on.</p>
+  </header>
+  <ul class="rejilla" id="rejilla"></ul>
+</section>
+
+<!-- 4 · the pour -->
+<section class="nn-pour" id="pour" aria-labelledby="pTit">
+  <div class="nn-pour-pin">
+    <div class="nn-pour-film" aria-hidden="true">
+      <video id="pourVid" muted playsinline preload="auto" poster="media/pour-poster.jpg" data-src="media/pour.mp4?v=1"></video>
+    </div>
+    <div class="nn-pour-flood" aria-hidden="true"></div>
+    <div class="nn-pour-copy">
+      <p class="nn-eye">The formula</p>
+      <h2 class="nn-pour-h" id="pTit"><span>Thick.</span> <span>Glossy.</span> <span>Yours.</span></h2>
+      <p class="nn-pour-sub">Keep scrolling. It pours in whatever shade you picked.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · how to wear -->
+<section class="nn-sec nn-how" id="cuidado" aria-labelledby="cTit">
+  <svg class="nn-drip" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v30c-60 0-70 20-76 48s-40 28-46 0-24-48-78-48-70 34-76 70-44 36-50 0-26-70-84-70-72 22-78 50-40 28-46 0-28-50-88-50-76 38-82 78-44 40-50 0-24-78-84-78-70 24-76 52-40 28-46 0-30-52-90-52-76 30-82 64-44 34-50 0-26-64-86-64-66 18-72 40-38 22-44 0S56 30 0 30z"/></svg>
+  <div class="nn-how-pin">
+    <div class="nn-how-photos">
+      <figure class="nn-how-photo is-on"><img src="media/howto-1-prep-1200.webp" srcset="media/howto-1-prep-700.webp 700w, media/howto-1-prep-1200.webp 1200w" sizes="(max-width:900px) 92vw, 40vw" width="1200" height="1607" alt="Bare nails being filed" loading="lazy" decoding="async"></figure>
+      <figure class="nn-how-photo"><img src="media/howto-2-coat-1200.webp" srcset="media/howto-2-coat-700.webp 700w, media/howto-2-coat-1200.webp 1200w" sizes="(max-width:900px) 92vw, 40vw" width="1200" height="1607" alt="A coat of coral lacquer brushed onto a nail" loading="lazy" decoding="async"></figure>
+      <figure class="nn-how-photo"><img src="media/howto-3-seal-1200.webp" srcset="media/howto-3-seal-700.webp 700w, media/howto-3-seal-1200.webp 1200w" sizes="(max-width:900px) 92vw, 40vw" width="1200" height="1607" alt="Five finished glossy coral nails" loading="lazy" decoding="async"></figure>
+      <span class="nn-how-count" aria-hidden="true"><b id="howNum">01</b><i>/03</i></span>
+    </div>
+    <div class="nn-how-txt">
+      <p class="nn-eye">How to wear it</p>
+      <h2 class="nn-h nn-lines" id="cTit">Three moves.<br><em>No smudges.</em></h2>
+      <ol class="nn-steps">
+        <li class="nn-step is-on"><span class="nn-step-n">01</span><div><h3>Prep</h3><p>Push back the cuticles, file the edge and wipe each nail so the colour grips.</p></div></li>
+        <li class="nn-step"><span class="nn-step-n">02</span><div><h3>Two thin coats</h3><p>One thin coat from base to tip, two minutes to set, then a second one.</p></div></li>
+        <li class="nn-step"><span class="nn-step-n">03</span><div><h3>Seal</h3><p>A clear top coat over the colour and along the tip keeps the edge from chipping.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · bare vs painted -->
+<section class="nn-bare" id="bare" aria-labelledby="bvTit">
+  <div class="nn-cmp" id="cmp">
+    <img class="nn-cmp-img" id="cmpBare" alt="The hand with bare nails" width="2560" height="1429" loading="lazy" decoding="async">
+    <div class="nn-cmp-top" id="cmpTop"><img class="nn-cmp-img" id="cmpPaint" alt="The same hand wearing the selected shade" width="2560" height="1429" loading="lazy" decoding="async"></div>
+    <span class="nn-cmp-tag nn-cmp-tag-l">Painted</span>
+    <span class="nn-cmp-tag nn-cmp-tag-r">Bare</span>
+    <div class="nn-cmp-bar" id="cmpBar" role="slider" tabindex="0" aria-label="Drag to compare bare and painted nails" aria-valuemin="0" aria-valuemax="100" aria-valuenow="55">
+      <span class="nn-cmp-knob"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+    </div>
+    <div class="nn-cmp-copy">
+      <p class="nn-eye">The proof</p>
+      <h2 class="nn-h" id="bvTit">Same hand.<br><em>Different attitude.</em></h2>
+      <p class="nn-lede">Drag the line. Left is <b id="cmpName">Solstice</b>, right is Tuesday.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · the numbers -->
+<section class="nn-sec nn-nums" id="numbers" aria-labelledby="nTit">
+  <div class="nn-wrap">
+    <p class="nn-eye">The small print, large</p>
+    <h2 class="nn-h nn-lines" id="nTit">Everything you need.<br><em>Nothing you'll chip.</em></h2>
+    <ul class="nn-stats">
+      <li><b><span data-count="12">12</span><i>ml</i></b><span>Heavy glass bottle</span><svg viewBox="0 0 120 40" aria-hidden="true"><path pathLength="1" d="M4 30c18-26 30 14 48-8s26 18 64-14"/></svg></li>
+      <li><b><span data-count="6">6</span></b><span>Shades, one finish</span><svg viewBox="0 0 120 40" aria-hidden="true"><path pathLength="1" d="M4 20h20l8-14 12 28 12-28 12 28 8-14h40"/></svg></li>
+      <li><b><span data-count="2">2</span></b><span>Thin coats, base to tip</span><svg viewBox="0 0 120 40" aria-hidden="true"><path pathLength="1" d="M6 12h108M6 28h108"/></svg></li>
+      <li><b><i>$</i><span data-count="28">28</span></b><span>A bottle, any colour</span><svg viewBox="0 0 120 40" aria-hidden="true"><path pathLength="1" d="M6 32C30 4 44 4 60 20s30 16 54-12"/></svg></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 8 · worn out -->
+<section class="nn-sec nn-worn" id="worn" aria-labelledby="wTit">
+  <header class="nn-head">
+    <p class="nn-eye">Worn out</p>
+    <h2 class="nn-h nn-lines" id="wTit">Seen in the <em>wild.</em></h2>
+    <p class="nn-lede">Drag it, throw it. Tap a photo to wear that shade.</p>
+  </header>
+  <div class="nn-reel" id="reel" aria-label="Photos of the six shades out in the world">
+    <ul class="nn-reel-track" id="reelTrack"></ul>
+  </div>
+</section>
+
+<!-- 9 · new shades, first -->
+<section class="nn-final" id="final" aria-labelledby="bTit">
+  <div class="nn-final-in">
+    <p class="nn-eye">Newsletter</p>
+    <h2 class="nn-outline" id="bTit" data-text="New shades, first.">New shades, first.</h2>
+    <p class="nn-lede">One email when a colour drops. Nothing else, ever.</p>
+    <form class="correo" id="correo" novalidate>
+      <label class="oculto" for="email">Email address</label>
+      <input id="email" type="email" inputmode="email" autocomplete="email" placeholder="Your email" required>
+      <button class="laca laca-s" type="submit">
+        <span class="laca-brillo" aria-hidden="true"></span>
+        <span class="laca-txt"><span>Subscribe</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span>
+        <span class="laca-ok" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7"/></svg>You're in</span>
+      </button>
+      <p class="correo-msg" id="correoMsg" role="status"></p>
+    </form>
+  </div>
+  <figure class="nn-final-pic"><img id="fotoFinal" alt="Solstice nail lacquer on the hand" width="1060" height="1413" loading="lazy" decoding="async"></figure>
+</section>
+
+</main>
+
+<footer class="nn-pie">
+  <div class="nn-pie-top">
+    <div class="nn-pie-brand">
+      <p>Loud, glossy nail lacquer in six shades.</p>
+      <div class="nn-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.4 2.6 2 4.2 4.5 4.5"/></svg></a>
+        <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M11 9.5l-2 10M11 9.5c3.5-1.5 5.5.5 4.8 2.8-.7 2.4-3.6 3-4.8 1.4"/></svg></a>
+      </div>
+    </div>
+    <nav class="nn-pie-col" aria-label="Shop"><h3>Shop</h3><a href="#tonos">All shades</a><a href="#tonos" data-tono="2">Solstice</a><a href="#tonos" data-tono="3">Vesper</a><a href="#cuidado">How to wear</a></nav>
+    <nav class="nn-pie-col" aria-label="Help"><h3>Help</h3><a href="#">Shipping</a><a href="#">Returns</a><a href="#">FAQ</a><a href="#">Contact</a></nav>
+    <nav class="nn-pie-col" aria-label="Company"><h3>Company</h3><a href="#manifesto">About</a><a href="#">Stockists</a><a href="#">Press</a></nav>
+  </div>
+  <p class="nn-pie-word" aria-hidden="true"><span>nice</span> <span>new</span> <span>nails</span></p>
+  <div class="nn-pie-bot">
+    <p>© 2026 Nice New Nails. A concept brand: nothing here is for sale.</p>
+    <nav aria-label="Legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></nav>
+  </div>
+</footer>
+
+<div class="nn-cursor" id="nnCursor" aria-hidden="true"></div>
+<div class="gota-vuela" id="gotaVuela" aria-hidden="true"></div>
+<p class="oculto" id="estadoBolsa" role="status" aria-live="polite" aria-atomic="true"></p>
+<script src="aurella-bag.js?v=1"></script>
+<script src="aurella.js?v=9"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="nnn.js?v=1"></script>
+</body>
+</html>
